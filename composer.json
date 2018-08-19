@@ -1,13 +1,19 @@
 {
-    "name": "ideneal/openload",
+    "name": "marcofbb/vidcloudco",
     "type": "library",
-    "description": "OpenLoad Service Client Library",
+    "description": "VidCloudCo Service Client Library",
     "license": "MIT",
     "authors": [
         {
             "name": "Daniele Pedone",
             "email": "ideneal.ztl@gmail.com",
             "homepage": "http://ideneal.altervista.org/",
+            "role": "Developer"
+        },
+		{
+            "name": "Marco Biondi",
+            "email": "marco.fbb@gmail.com",
+            "homepage": "http://www.marcofbb.com.ar/",
             "role": "Developer"
         }
     ],
@@ -20,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ideneal\\OpenLoad\\": "src/"
+            "marcofbb\\VidCloudCo\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ideneal\\OpenLoad\\Test\\": "tests/"
+            "marcofbb\\VidCloudCo\\Test\\": "tests/"
         }
     }
 }
