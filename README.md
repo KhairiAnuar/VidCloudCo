@@ -109,7 +109,7 @@ $vidcloudco = new VidCloudCoClient('apiLogin', 'apiKey');
 $folders = $openLoad->searchFolders('movies', null, true);
 ```
 
-It's also possible find more about what you can to do at [VidCloudCo Api](https://vidcloudco.co/api).
+It's also possible find more about what you can to do at [VidCloudCo Api](https://vidcloud.co/api).
 
 ## Author
 
