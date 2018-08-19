@@ -8,7 +8,7 @@ It's just a php client of the [vidcloud.co](https://vidcloud.co/) service.
 ## Install
 
 ```
-composer require marcofbb/vidcloudco:~1.1
+composer require marcofbb/vidcloudco
 ```
 
 ## Usage
