@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Builder;
+namespace marcofbb\VidCloudCo\Builder;
 
 /**
  * AbstractBuilder

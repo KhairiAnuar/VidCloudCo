@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Builder;
+namespace marcofbb\VidCloudCo\Builder;
 
-use Ideneal\OpenLoad\Entity\ConversionStatus;
+use marcofbb\VidCloudCo\Entity\ConversionStatus;
 
 /**
  * ConversionStatusBuilder

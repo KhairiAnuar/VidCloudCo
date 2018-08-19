@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Test\Builder;
+namespace marcofbb\VidCloudCo\Test\Builder;
 
-use Ideneal\OpenLoad\Builder\RemoteUploadBuilder;
-use Ideneal\OpenLoad\Entity\RemoteUpload;
-use Ideneal\OpenLoad\Entity\RemoteUploadStatus;
+use marcofbb\VidCloudCo\Builder\RemoteUploadBuilder;
+use marcofbb\VidCloudCo\Entity\RemoteUpload;
+use marcofbb\VidCloudCo\Entity\RemoteUploadStatus;
 use PHPUnit\Framework\TestCase;
 
 /**

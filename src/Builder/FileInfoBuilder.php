@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Builder;
+namespace marcofbb\VidCloudCo\Builder;
 
-use Ideneal\OpenLoad\Entity\FileInfo;
+use marcofbb\VidCloudCo\Entity\FileInfo;
 
 /**
  * FileInfoBuilder

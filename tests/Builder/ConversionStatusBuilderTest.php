@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Test\Builder;
+namespace marcofbb\VidCloudCo\Test\Builder;
 
-use Ideneal\OpenLoad\Builder\ConversionStatusBuilder;
-use Ideneal\OpenLoad\Entity\ConversionStatus;
+use marcofbb\VidCloudCo\Builder\ConversionStatusBuilder;
+use marcofbb\VidCloudCo\Entity\ConversionStatus;
 use PHPUnit\Framework\TestCase;
 
 /**

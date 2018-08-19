@@ -9,44 +9,44 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad;
+namespace marcofbb\VidCloudCo;
 
 use GuzzleHttp\Client;
-use Ideneal\OpenLoad\Builder\AccountInfoBuilder;
-use Ideneal\OpenLoad\Builder\ContentBuilder;
-use Ideneal\OpenLoad\Builder\ConversionStatusBuilder;
-use Ideneal\OpenLoad\Builder\FileInfoBuilder;
-use Ideneal\OpenLoad\Builder\LinkBuilder;
-use Ideneal\OpenLoad\Builder\RemoteUploadBuilder;
-use Ideneal\OpenLoad\Builder\TicketBuilder;
-use Ideneal\OpenLoad\Entity\AbstractContent;
-use Ideneal\OpenLoad\Entity\AccountInfo;
-use Ideneal\OpenLoad\Entity\ConversionStatus;
-use Ideneal\OpenLoad\Entity\DownloadLink;
-use Ideneal\OpenLoad\Entity\File;
-use Ideneal\OpenLoad\Entity\FileInfo;
-use Ideneal\OpenLoad\Entity\Folder;
-use Ideneal\OpenLoad\Entity\RemoteUpload;
-use Ideneal\OpenLoad\Entity\RemoteUploadStatus;
-use Ideneal\OpenLoad\Entity\Ticket;
-use Ideneal\OpenLoad\Entity\UploadLink;
-use Ideneal\OpenLoad\Exception\BadRequestException;
-use Ideneal\OpenLoad\Exception\BandwidthUsageExceededException;
-use Ideneal\OpenLoad\Exception\FileNotFoundException;
-use Ideneal\OpenLoad\Exception\PermissionDeniedException;
-use Ideneal\OpenLoad\Exception\ServerException;
-use Ideneal\OpenLoad\Exception\UnavailableForLegalReasonsException;
+use marcofbb\VidCloudCo\Builder\AccountInfoBuilder;
+use marcofbb\VidCloudCo\Builder\ContentBuilder;
+use marcofbb\VidCloudCo\Builder\ConversionStatusBuilder;
+use marcofbb\VidCloudCo\Builder\FileInfoBuilder;
+use marcofbb\VidCloudCo\Builder\LinkBuilder;
+use marcofbb\VidCloudCo\Builder\RemoteUploadBuilder;
+use marcofbb\VidCloudCo\Builder\TicketBuilder;
+use marcofbb\VidCloudCo\Entity\AbstractContent;
+use marcofbb\VidCloudCo\Entity\AccountInfo;
+use marcofbb\VidCloudCo\Entity\ConversionStatus;
+use marcofbb\VidCloudCo\Entity\DownloadLink;
+use marcofbb\VidCloudCo\Entity\File;
+use marcofbb\VidCloudCo\Entity\FileInfo;
+use marcofbb\VidCloudCo\Entity\Folder;
+use marcofbb\VidCloudCo\Entity\RemoteUpload;
+use marcofbb\VidCloudCo\Entity\RemoteUploadStatus;
+use marcofbb\VidCloudCo\Entity\Ticket;
+use marcofbb\VidCloudCo\Entity\UploadLink;
+use marcofbb\VidCloudCo\Exception\BadRequestException;
+use marcofbb\VidCloudCo\Exception\BandwidthUsageExceededException;
+use marcofbb\VidCloudCo\Exception\FileNotFoundException;
+use marcofbb\VidCloudCo\Exception\PermissionDeniedException;
+use marcofbb\VidCloudCo\Exception\ServerException;
+use marcofbb\VidCloudCo\Exception\UnavailableForLegalReasonsException;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * OpenLoadClient
+ * VidCloudCoClient
  *
  * @author Daniele Pedone aka Ideneal <ideneal.ztl@gmail.com>
  */
-class OpenLoadClient
+class VidCloudCoClient
 {
-    const API_BASE_URL = 'https://api.openload.co';
-    const API_VERSION  = 1;
+    const API_BASE_URL = 'https://api.vidcloud.co';
+    const API_VERSION  = 'v1';
 
     /**
      * @var string The API login string

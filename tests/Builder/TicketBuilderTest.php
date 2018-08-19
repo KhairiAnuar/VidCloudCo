@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Test\Builder;
+namespace marcofbb\VidCloudCo\Test\Builder;
 
-use Ideneal\OpenLoad\Builder\CaptchaBuilder;
-use Ideneal\OpenLoad\Builder\TicketBuilder;
-use Ideneal\OpenLoad\Entity\Ticket;
-use Ideneal\OpenLoad\Entity\Captcha;
+use marcofbb\VidCloudCo\Builder\CaptchaBuilder;
+use marcofbb\VidCloudCo\Builder\TicketBuilder;
+use marcofbb\VidCloudCo\Entity\Ticket;
+use marcofbb\VidCloudCo\Entity\Captcha;
 use PHPUnit\Framework\TestCase;
 
 /**

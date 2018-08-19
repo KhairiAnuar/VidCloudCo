@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Builder;
+namespace marcofbb\VidCloudCo\Builder;
 
-use Ideneal\OpenLoad\Entity\DownloadLink;
-use Ideneal\OpenLoad\Entity\UploadLink;
+use marcofbb\VidCloudCo\Entity\DownloadLink;
+use marcofbb\VidCloudCo\Entity\UploadLink;
 
 /**
  * DownloadLinkBuilder

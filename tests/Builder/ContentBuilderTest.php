@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Test\Builder;
+namespace marcofbb\VidCloudCo\Test\Builder;
 
-use Ideneal\OpenLoad\Builder\ContentBuilder;
-use Ideneal\OpenLoad\Entity\File;
-use Ideneal\OpenLoad\Entity\Folder;
+use marcofbb\VidCloudCo\Builder\ContentBuilder;
+use marcofbb\VidCloudCo\Entity\File;
+use marcofbb\VidCloudCo\Entity\Folder;
 use PHPUnit\Framework\TestCase;
 
 /**

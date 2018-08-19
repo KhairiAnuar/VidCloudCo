@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Exception;
+namespace marcofbb\VidCloudCo\Exception;
 
 /**
  * ServerException

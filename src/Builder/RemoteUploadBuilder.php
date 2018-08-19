@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Builder;
+namespace marcofbb\VidCloudCo\Builder;
 
-use Ideneal\OpenLoad\Entity\RemoteUpload;
-use Ideneal\OpenLoad\Entity\RemoteUploadStatus;
+use marcofbb\VidCloudCo\Entity\RemoteUpload;
+use marcofbb\VidCloudCo\Entity\RemoteUploadStatus;
 
 /**
  * RemoteUploadBuilder

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Builder;
+namespace marcofbb\VidCloudCo\Builder;
 
-use Ideneal\OpenLoad\Entity\File;
-use Ideneal\OpenLoad\Entity\Folder;
+use marcofbb\VidCloudCo\Entity\File;
+use marcofbb\VidCloudCo\Entity\Folder;
 
 /**
  * ContentBuilder

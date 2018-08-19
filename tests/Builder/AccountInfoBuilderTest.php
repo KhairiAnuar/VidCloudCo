@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Ideneal\OpenLoad\Test\Builder;
+namespace marcofbb\VidCloudCo\Test\Builder;
 
-use Ideneal\OpenLoad\Builder\AccountInfoBuilder;
-use Ideneal\OpenLoad\Entity\AccountInfo;
+use marcofbb\VidCloudCo\Builder\AccountInfoBuilder;
+use marcofbb\VidCloudCo\Entity\AccountInfo;
 use PHPUnit\Framework\TestCase;
 
 /**
