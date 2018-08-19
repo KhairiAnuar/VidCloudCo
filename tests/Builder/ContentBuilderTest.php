@@ -31,7 +31,7 @@ class ContentBuilderTest extends TestCase
     /**
      * @var string The file result fixture
      */
-    private $fileFixture = '{"name": "big_buck_bunny.mp4.mp4","sha1": "c6531f5ce9669d6547023d92aea4805b7c45d133","folderid": "4258","upload_at": "1419791256","status": "active","size": "5114011","content_type": "video/mp4","download_count": "48","cstatus": "ok","link": "https://openload.co/f/UPPjeAk--30/big_buck_bunny.mp4.mp4","linkextid": "UPPjeAk--30"}';
+    private $fileFixture = '{"name": "big_buck_bunny.mp4.mp4","sha1": "c6531f5ce9669d6547023d92aea4805b7c45d133","folderid": "4258","upload_at": "1419791256","status": "active","size": "5114011","content_type": "video/mp4","download_count": "48","cstatus": "ok","link": "https://vidcloud.co/f/UPPjeAk--30/big_buck_bunny.mp4.mp4","linkextid": "UPPjeAk--30"}';
 
     /**
      * Tests the building of a folder
@@ -61,7 +61,7 @@ class ContentBuilderTest extends TestCase
         $this->assertEquals('ok', $file->getConversionStatus());
         $this->assertEquals('UPPjeAk--30', $file->getId());
         $this->assertEquals('big_buck_bunny.mp4.mp4', $file->getName());
-        $this->assertEquals('https://openload.co/f/UPPjeAk--30/big_buck_bunny.mp4.mp4', $file->getUrl());
+        $this->assertEquals('https://vidcloud.co/f/UPPjeAk--30/big_buck_bunny.mp4.mp4', $file->getUrl());
     }
 
     /**

@@ -27,7 +27,7 @@ class TicketBuilderTest extends TestCase
     /**
      * @var string The ticket result fixture
      */
-    private $fixture = '{"ticket": "72fA-_Lq8Ak~~1440353112~n~~0~nXtN3RI-nsEa28Iq","captcha_url": "https://openload.co/dlcaptcha/b92eY_nfjV4.png","captcha_w": 140,"captcha_h": 70,"wait_time": 10,"valid_until": "2015-08-23 18:20:13"}';
+    private $fixture = '{"ticket": "72fA-_Lq8Ak~~1440353112~n~~0~nXtN3RI-nsEa28Iq","captcha_url": "https://vidcloud.co/dlcaptcha/b92eY_nfjV4.png","captcha_w": 140,"captcha_h": 70,"wait_time": 10,"valid_until": "2015-08-23 18:20:13"}';
 
     /**
      * Tests the building of a ticket
@@ -51,7 +51,7 @@ class TicketBuilderTest extends TestCase
         $data    = json_decode($this->fixture, true);
         $captcha = CaptchaBuilder::buildCaptcha($data['captcha_url'], $data['captcha_w'], $data['captcha_h']);
         $this->assertInstanceOf(Captcha::class, $captcha);
-        $this->assertEquals('https://openload.co/dlcaptcha/b92eY_nfjV4.png', $captcha->getUrl());
+        $this->assertEquals('https://vidcloud.co/dlcaptcha/b92eY_nfjV4.png', $captcha->getUrl());
         $this->assertEquals(140, $captcha->getWidth());
         $this->assertEquals(70, $captcha->getHeight());
     }

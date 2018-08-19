@@ -25,7 +25,7 @@ class AccountInfoBuilderTest extends TestCase
     /**
      * @var string The account info result fixture
      */
-    private $fixture = '{"extid": "extuserid","email": "admin@openload.co","signup_at": "2015-01-09 23:59:54","storage_left": -1,"storage_used": "32922117680","traffic": {"left": -1,"used_24h": 0},"balance": 0}';
+    private $fixture = '{"extid": "extuserid","email": "admin@vidcloud.co","signup_at": "2015-01-09 23:59:54","storage_left": -1,"storage_used": "32922117680","traffic": {"left": -1,"used_24h": 0},"balance": 0}';
 
     /**
      * Tests the building of the account
@@ -35,7 +35,7 @@ class AccountInfoBuilderTest extends TestCase
         $data    = json_decode($this->fixture, true);
         $account = AccountInfoBuilder::buildAccountInfo($data);
         $this->assertInstanceOf(AccountInfo::class, $account);
-        $this->assertEquals('admin@openload.co', $account->getEmail());
+        $this->assertEquals('admin@vidcloud.co', $account->getEmail());
         $this->assertEquals('extuserid', $account->getId());
         $this->assertInstanceOf(\DateTime::class, $account->getSignupDate());
         $this->assertEquals(-1, $account->getStorageLeft());

@@ -25,7 +25,7 @@ class ConversionStatusBuilderTest extends TestCase
     /**
      * @var string The conversion status result fixture
      */
-    private $fixture = '{"name": "Geysir.AVI","id": "3565411","status": "pending","last_update": "2015-08-23 19:41:40","progress": 0.32,"retries": "0","link": "https://openload.co/f/f02JFG293J8/Geysir.AVI","linkextid": "f02JFG293J8"}';
+    private $fixture = '{"name": "Geysir.AVI","id": "3565411","status": "pending","last_update": "2015-08-23 19:41:40","progress": 0.32,"retries": "0","link": "https://vidcloud.co/f/f02JFG293J8/Geysir.AVI","linkextid": "f02JFG293J8"}';
 
     /**
      * Tests the building of the conversion status
@@ -41,7 +41,7 @@ class ConversionStatusBuilderTest extends TestCase
         $this->assertInstanceOf(\DateTime::class, $status->getLastUpdateDate());
         $this->assertEquals(0.32, $status->getProgress());
         $this->assertEquals('0', $status->getRetries());
-        $this->assertEquals('https://openload.co/f/f02JFG293J8/Geysir.AVI', $status->getUrl());
+        $this->assertEquals('https://vidcloud.co/f/f02JFG293J8/Geysir.AVI', $status->getUrl());
         $this->assertEquals('f02JFG293J8', $status->getFileId());
     }
 }
