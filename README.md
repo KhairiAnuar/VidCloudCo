@@ -1,6 +1,6 @@
 # API PHP VidCloud.Co
 
-[![Packagist](https://img.shields.io/packagist/v/ideneal/vidcloudco.svg?style=flat-square)](https://packagist.org/packages/marcofbb/vidcloudco)
+[![Packagist](https://img.shields.io/packagist/v/marcofbb/vidcloudco.svg?style=flat-square)](https://packagist.org/packages/marcofbb/vidcloudco)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/marcofbb/VidCloudCo/master/LICENSE)
 
 It's just a php client of the [vidcloud.co](https://vidcloud.co/) service.
