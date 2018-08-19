@@ -2,8 +2,6 @@
 
 [![Packagist](https://img.shields.io/packagist/v/ideneal/vidcloudco.svg?style=flat-square)](https://packagist.org/packages/marcofbb/vidcloudco)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/marcofbb/VidCloudCo/master/LICENSE)
-[![Travis branch](https://img.shields.io/travis/marcofbb/VidCloudCo/master.svg?style=flat-square)](https://travis-ci.org/marcofbb/VidCloudCo)
-[![Codacy branch](https://img.shields.io/codacy/cbb3c5818734481bba83a1ecbf9e0f28/master.svg?style=flat-square)](https://www.codacy.com/app/ideneal-ztl/VidCloudCo)
 
 It's just a php client of the [vidcloud.co](https://vidcloud.co/) service.
 
