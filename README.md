@@ -1,16 +1,16 @@
-# OpenLoad
+# API PHP VidCloud.Co
 
-[![Packagist](https://img.shields.io/packagist/v/ideneal/openload.svg?style=flat-square)](https://packagist.org/packages/ideneal/openload)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/Ideneal/OpenLoad/master/LICENSE)
-[![Travis branch](https://img.shields.io/travis/Ideneal/OpenLoad/master.svg?style=flat-square)](https://travis-ci.org/Ideneal/OpenLoad)
-[![Codacy branch](https://img.shields.io/codacy/cbb3c5818734481bba83a1ecbf9e0f28/master.svg?style=flat-square)](https://www.codacy.com/app/ideneal-ztl/OpenLoad)
+[![Packagist](https://img.shields.io/packagist/v/ideneal/vidcloudco.svg?style=flat-square)](https://packagist.org/packages/marcofbb/vidcloudco)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/marcofbb/VidCloudCo/master/LICENSE)
+[![Travis branch](https://img.shields.io/travis/marcofbb/VidCloudCo/master.svg?style=flat-square)](https://travis-ci.org/marcofbb/VidCloudCo)
+[![Codacy branch](https://img.shields.io/codacy/cbb3c5818734481bba83a1ecbf9e0f28/master.svg?style=flat-square)](https://www.codacy.com/app/ideneal-ztl/VidCloudCo)
 
-It's just a php client of the [OpenLoad.co](https://openload.co/) service.
+It's just a php client of the [vidcloud.co](https://vidcloud.co/) service.
 
 ## Install
 
 ```
-composer require ideneal/openload:~1.1
+composer require marcofbb/vidcloudco:~1.1
 ```
 
 ## Usage
@@ -25,11 +25,11 @@ You can retrieve your account info by using `getAccountInfo` method.
 
 include_once './vendor/autoload.php';
 
-use Ideneal\OpenLoad\OpenLoadClient;
+use marcofbb\VidCloudCo\VidCloudCoClient;
 
-$openload = new OpenLoadClient('apiLogin', 'apiKey');
+$vidcloudco = new VidCloudCoClient('apiLogin', 'apiKey');
 
-$accountInfo = $openload->getAccountInfo();
+$accountInfo = $vidcloudco->getAccountInfo();
 echo $accountInfo->getEmail(); //account@email.com
 ```
 
@@ -44,17 +44,17 @@ The remote file has to be a FileInfo object or the file id.
 
 include_once './vendor/autoload.php';
 
-use Ideneal\OpenLoad\OpenLoadClient;
+use marcofbb\VidCloudCo\VidCloudCoClient;
 
-$openload = new OpenLoadClient('apiLogin', 'apiKey');
+$vidcloudco = new VidCloudCoClient('apiLogin', 'apiKey');
 
-$fileInfo = $openload->getFileInfo('72fA-_Lq8Ak');
-$ticket   = $openload->getTicket($fileInfo);
+$fileInfo = $vidcloudco->getFileInfo('72fA-_Lq8Ak');
+$ticket   = $vidcloudco->getTicket($fileInfo);
 
 // ...
 // After read the captcha response from $ticket->getCaptcha()->getUrl()
 
-$downloadLink = $openload->getDownloadLink($ticket, $captchaResponse);
+$downloadLink = $vidcloudco->getDownloadLink($ticket, $captchaResponse);
 ```
 
 ### Upload a file
@@ -66,11 +66,11 @@ You can upload a file by using `uploadFile` method.
 
 include_once './vendor/autoload.php';
 
-use Ideneal\OpenLoad\OpenLoadClient;
+use marcofbb\VidCloudCo\VidCloudCoClient;
 
-$openload = new OpenLoadClient('apiLogin', 'apiKey');
+$vidcloudco = new VidCloudCoClient('apiLogin', 'apiKey');
 
-$openload->uploadFile('/home/user/Pictures/image.jpg');
+$vidcloudco->uploadFile('/home/user/Pictures/image.jpg');
 ```
 
 ### Search files with a specific name
@@ -85,9 +85,9 @@ and the third parameter defines whether the search has to be recursive or not (d
 
 include_once './vendor/autoload.php';
 
-use Ideneal\OpenLoad\OpenLoadClient;
+use marcofbb\VidCloudCo\VidCloudCoClient;
 
-$openload = new OpenLoadClient('apiLogin', 'apiKey');
+$vidcloudco = new VidCloudCoClient('apiLogin', 'apiKey');
 
 $files = $openLoad->searchFiles('video.mp4', null, true);
 ```
@@ -104,18 +104,19 @@ and the third parameter defines whether the search has to be recursive or not (d
 
 include_once './vendor/autoload.php';
 
-use Ideneal\OpenLoad\OpenLoadClient;
+use marcofbb\VidCloudCo\VidCloudCoClient;
 
-$openload = new OpenLoadClient('apiLogin', 'apiKey');
+$vidcloudco = new VidCloudCoClient('apiLogin', 'apiKey');
 
 $folders = $openLoad->searchFolders('movies', null, true);
 ```
 
-It's also possible find more about what you can to do at [OpenLoad Api](https://openload.co/api).
+It's also possible find more about what you can to do at [VidCloudCo Api](https://vidcloudco.co/api).
 
 ## Author
 
 Daniele Pedone
+Marco Biondi
 
 ## License
 
